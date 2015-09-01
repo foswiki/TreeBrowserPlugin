@@ -460,6 +460,9 @@ See Foswiki:Extensions.TreeBrowserPluginDev.
 |  Version: | %$VERSION% |
 |  Release: | %$RELEASE% |
 |  Change History: | <!-- versions below in reverse order -->&nbsp; |
+|  01 Sep 2015: | (V2.2) - Foswikitask:Item4192: Add VarTREEBROWSER topic<br/>\
+                           Foswikitask:Item2941: Close out some old pending work.<br/>\
+                           Foswikitask:Item13656: Update for newer perls, other minor doc issues. |
 |  27 Oct 2010: | (v2.1) - Minor rebranding from 'TWiki'. By [[Foswiki:Main.DanDascalescu][Dan Dascalescu]]. |
 |  10 Nov 2009: | (v2.0) - Fixed version numbering for configure. By [[Foswiki:Main.IngoKappler][Ingo Kappler]]. |
 |  20 Feb 2009: | (v1.9) - Foswiki port. By [[Foswiki:Main.StephaneLenclud][Stephane Lenclud]]. |

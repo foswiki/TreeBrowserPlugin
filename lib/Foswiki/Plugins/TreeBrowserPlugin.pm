@@ -2,7 +2,8 @@
 #
 # Copyright (C) 2000-2003 Andrea Sterbini, a.sterbini@flashnet.it
 # Copyright (C) 2001-2004 Peter Thoeny, peter@thoeny.com
-# Copyright (C) 2006-2009 Stéphane Lenclud, foswiki@lenclud.com
+# Copyright (C) 2006-2009 Stephane Lenclud, foswiki@lenclud.com
+# Copyright (C) 2009-2015 Foswiki Contributors
 #
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License
@@ -37,8 +38,8 @@ use vars qw(
   $debug $js
 );
 
-$VERSION    = '2.1';
-$RELEASE    = '2.1';
+$VERSION    = '2.2';
+$RELEASE    = '2.2';
 $pluginName = 'TreeBrowserPlugin';
 
 # =========================
@@ -79,10 +80,10 @@ sub preRenderingHandler {
           if $_[0] =~ /%TREEBROWSER/
         ; #SL: As far as I can tell this replaces three space characters with tabulation, why?
         $_[0] =~
-s/%TREEBROWSER{(.*?)}%(([\n\r]+[^\t]{1}[^\n\r]*)*?)(([\n\r]+\t[^\n\r]*)+)/&handleTreeView($1, $2, $4)/ges
+s/%TREEBROWSER\{(.*?)\}%(([\n\r]+[^\t]{1}[^\n\r]*)*?)(([\n\r]+\t[^\n\r]*)+)/&handleTreeView($1, $2, $4)/ges
           ;    #original
                #SL: Get ride of lonely TREEBROWSER tag.
-        $_[0] =~ s/%TREEBROWSER{(.*?)}%/&handleLonelyTreeView($1)/ges;
+        $_[0] =~ s/%TREEBROWSER\{(.*?)\}%/&handleLonelyTreeView($1)/ges;
     }
 }
 
