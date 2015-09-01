@@ -376,10 +376,7 @@ document.write(opacitydemo);
 Plugin settings are stored as preferences variables. To reference
 a plugin setting write ==%<nop>&lt;plugin&gt;_&lt;setting&gt;%==, i.e. ==%<nop>TREEBROWSERPLUGIN_SHORTDESCRIPTION%==
 
-   * One line description, is shown in the %SYSTEMWEB%.TextFormattingRules topic:
-      * Set SHORTDESCRIPTION = Renders a list as a collapsable/expandable tree
-
-   * Debug plugin: (See output in =data/debug.txt=)
+   * Debug plugin: (See output in =working/logs/debug.log= or your configured debug log location.)
       * Set DEBUG = 0
 
    * Themes are named =&lt;SOMETHING&gt;_THEME= and contain a comma delimited list of render type with parameters:
@@ -395,53 +392,7 @@ a plugin setting write ==%<nop>&lt;plugin&gt;_&lt;setting&gt;%==, i.e. ==%<nop>T
 
 ---++ Plugin Installation Instructions
 
-   0 Download the zip file.
-   0 Unzip ==%TOPIC%.zip== in your Foswiki installation directory. Content:
-     | *File:* | *Description:* |
-     | ==data/%SYSTEMWEB%/%TOPIC%.txt== | Plugin topic |
-     | ==lib/Foswiki/Plugins/%TOPIC%.pm== | Plugin Perl module |
-     | ==pub/%SYSTEMWEB%/%TOPIC%/dtree.css== | part of dtree |
-     | ==pub/%SYSTEMWEB%/%TOPIC%/dmenu.css== | Menu CSS  |
-     | ==pub/%SYSTEMWEB%/%TOPIC%/smenu.css== | Nicer menu CSS |
-     | ==pub/%SYSTEMWEB%/%TOPIC%/dtree.js== | part of dtree |
-     | ==pub/%SYSTEMWEB%/%TOPIC%/base.gif== | part of dtree |
-     | ==pub/%SYSTEMWEB%/%TOPIC%/cd.gif== | part of dtree |
-     | ==pub/%SYSTEMWEB%/%TOPIC%/empty.gif== | part of dtree |
-     | ==pub/%SYSTEMWEB%/%TOPIC%/folder.gif== | part of dtree |
-     | ==pub/%SYSTEMWEB%/%TOPIC%/folderopen.gif== | part of dtree |
-     | ==pub/%SYSTEMWEB%/%TOPIC%/globe.gif== | part of dtree |
-     | ==pub/%SYSTEMWEB%/%TOPIC%/imgfolder.gif== | part of dtree |
-     | ==pub/%SYSTEMWEB%/%TOPIC%/join.gif== | part of dtree |
-     | ==pub/%SYSTEMWEB%/%TOPIC%/joinbottom.gif== | part of dtree |
-     | ==pub/%SYSTEMWEB%/%TOPIC%/line.gif== | part of dtree |
-     | ==pub/%SYSTEMWEB%/%TOPIC%/minus.gif== | part of dtree |
-     | ==pub/%SYSTEMWEB%/%TOPIC%/minusbottom.gif== | part of dtree |
-     | ==pub/%SYSTEMWEB%/%TOPIC%/musicfolder.gif== | part of dtree |
-     | ==pub/%SYSTEMWEB%/%TOPIC%/nolines_minus.gif== | part of dtree |
-     | ==pub/%SYSTEMWEB%/%TOPIC%/nolines_plus.gif== | part of dtree |
-     | ==pub/%SYSTEMWEB%/%TOPIC%/page.gif== | part of dtree |
-     | ==pub/%SYSTEMWEB%/%TOPIC%/plus.gif== | part of dtree |
-     | ==pub/%SYSTEMWEB%/%TOPIC%/plusbottom.gif== | part of dtree |
-     | ==pub/%SYSTEMWEB%/%TOPIC%/question.gif== | part of dtree |
-     | ==pub/%SYSTEMWEB%/%TOPIC%/trash.gif== | part of dtree |
-     | ==pub/%SYSTEMWEB%/%TOPIC%/doc.gif== | icons from [[Foswiki:Extensions.RenderListPlugin][RenderListPlugin]] |
-     | ==pub/%SYSTEMWEB%/%TOPIC%/email.gif== | icons from [[Foswiki:Extensions.RenderListPlugin][RenderListPlugin]] |
-     | ==pub/%SYSTEMWEB%/%TOPIC%/file.gif== | icons from [[Foswiki:Extensions.RenderListPlugin][RenderListPlugin]] |
-     | ==pub/%SYSTEMWEB%/%TOPIC%/group.gif== | icons from [[Foswiki:Extensions.RenderListPlugin][RenderListPlugin]] |
-     | ==pub/%SYSTEMWEB%/%TOPIC%/home.gif== | icons from [[Foswiki:Extensions.RenderListPlugin][RenderListPlugin]] |
-     | ==pub/%SYSTEMWEB%/%TOPIC%/image.gif== | icons from [[Foswiki:Extensions.RenderListPlugin][RenderListPlugin]] |
-     | ==pub/%SYSTEMWEB%/%TOPIC%/pdf.gif== | icons from [[Foswiki:Extensions.RenderListPlugin][RenderListPlugin]] |
-     | ==pub/%SYSTEMWEB%/%TOPIC%/person.gif== | icons from [[Foswiki:Extensions.RenderListPlugin][RenderListPlugin]] |
-     | ==pub/%SYSTEMWEB%/%TOPIC%/persons.gif== | icons from [[Foswiki:Extensions.RenderListPlugin][RenderListPlugin]] |
-     | ==pub/%SYSTEMWEB%/%TOPIC%/ppt.gif== | icons from [[Foswiki:Extensions.RenderListPlugin][RenderListPlugin]] |
-     | ==pub/%SYSTEMWEB%/%TOPIC%/see.gif== | icons from [[Foswiki:Extensions.RenderListPlugin][RenderListPlugin]] |
-     | ==pub/%SYSTEMWEB%/%TOPIC%/sound.gif== | icons from [[Foswiki:Extensions.RenderListPlugin][RenderListPlugin]] |
-     | ==pub/%SYSTEMWEB%/%TOPIC%/trend.gif== | icons from [[Foswiki:Extensions.RenderListPlugin][RenderListPlugin]] |
-     | ==pub/%SYSTEMWEB%/%TOPIC%/virtualhome.gif== | icons from [[Foswiki:Extensions.RenderListPlugin][RenderListPlugin]] |
-     | ==pub/%SYSTEMWEB%/%TOPIC%/virtualperson.gif== | icons from [[Foswiki:Extensions.RenderListPlugin][RenderListPlugin]] |
-     | ==pub/%SYSTEMWEB%/%TOPIC%/virtualpersons.gif== | icons from [[Foswiki:Extensions.RenderListPlugin][RenderListPlugin]] |
-     | ==pub/%SYSTEMWEB%/%TOPIC%/xls.gif== | icons from [[Foswiki:Extensions.RenderListPlugin][RenderListPlugin]] |
-     | ==pub/%SYSTEMWEB%/%TOPIC%/zip.gif== | icons from [[Foswiki:Extensions.RenderListPlugin][RenderListPlugin]] |
+%$INSTALL_INSTRUCTIONS%
 
 ---++ Known issues
 
@@ -452,7 +403,7 @@ a plugin setting write ==%<nop>&lt;plugin&gt;_&lt;setting&gt;%==, i.e. ==%<nop>T
 
 ---++ Planned Enhancements
 
-See Foswiki:Extensions.TreeBrowserPluginDev.
+See Foswiki:Development.TreeBrowserPlugin.
    
 ---++ Plugin Info
 
