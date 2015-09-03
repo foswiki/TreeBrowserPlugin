@@ -1,4 +1,4 @@
-%META:TOPICINFO{author="ProjectContributor" comment="autosave" date="1356278781" format="1.1" version="1"}%
+%META:TOPICINFO{author="ProjectContributor" comment="autosave" date="1441248808" format="1.1" version="1"}%
 ---+!! Tree Browser Plugin
 
 Renders a bulleted or numbered list as a collapsible/expandable tree of nodes.
@@ -23,7 +23,7 @@ Rendering themes can be defined by =&lt;name&gt;_THEME= Plugin settings
       * The _root icon image_ is shown at the root of the tree, the _icon image_ is shown at every leaf node, the _folder icon image_ is shown at every collapsed internal node, and the _open folder icon image_ is shown at every expanded internal node. The icon images point to files attached to wiki topics and are referenced in the standard manner. If no path is given, the images are taken from %SYSTEMWEB%.DocumentGraphics.
       * If an icon image is omitted, the following defaults are chosen: %ATTACHURL%/empty.gif, %ATTACHURL%/page.gif, %ATTACHURL%/folder.gif, %ATTACHURL%/folderopen.gif
 
-If !JavaScript is not enabled, the list is rendered as usual, and the =%<nop>TREEBROWSER% tag is omitted.
+If !JavaScript is not enabled, the list is rendered as usual, and the =%<nop>TREEBROWSER%= tag is omitted.
 
 ---+++ Bullets
 
@@ -408,10 +408,11 @@ See Foswiki:Development.TreeBrowserPlugin.
 ---++ Plugin Info
 
 |  Author(s): | Foswiki:Main.ThomasWeigert & Foswiki:Main.StephaneLenclud |
+|  Copyright: | &copy; 2000-2003 Foswiki:Main.AndreaSterbini <br/>&copy; 2001-2004 TWiki:Main.PeterThoeny <br/>&copy; 2004 Foswiki:Main.ThomasWeigert <br/>&copy; 2006-2009 Foswiki:Main.StephaneLenclud <br/>&copy; 2009-2015 Foswiki Contributors |
 |  Version: | %$VERSION% |
 |  Release: | %$RELEASE% |
 |  Change History: | <!-- versions below in reverse order -->&nbsp; |
-|  01 Sep 2015: | (V2.2) - Foswikitask:Item4192: Add VarTREEBROWSER topic<br/>\
+|  03 Sep 2015: | (V2.2) - Foswikitask:Item4192: Add VarTREEBROWSER topic<br/>\
                            Foswikitask:Item2941: Close out some old pending work.<br/>\
                            Foswikitask:Item13656: Update for newer perls, other minor doc issues. |
 |  27 Oct 2010: | (v2.1) - Minor rebranding from 'TWiki'. By [[Foswiki:Main.DanDascalescu][Dan Dascalescu]]. |
@@ -439,46 +440,46 @@ See Foswiki:Development.TreeBrowserPlugin.
 |  Support: | Foswiki:Support.%TOPIC% |
 |  Development: | Foswiki:Development.%TOPIC% |
 
-%META:FILEATTACHMENT{name="dtree.js" attachment="dtree.js" attr="" comment="Saved by install script" date="1235132936" size="30563" stream="GLOB(0x92286c4)" tmpFilename="/tmp/V4uNUH57Ls" user="ProjectContributor" version="1"}%
-%META:FILEATTACHMENT{name="dtree.css" attachment="dtree.css" attr="" comment="Saved by install script" date="1235132936" size="988" stream="GLOB(0x920815c)" tmpFilename="/tmp/l1uBHNrOxH" user="ProjectContributor" version="1"}%
-%META:FILEATTACHMENT{name="dmenu.css" attachment="dmenu.css" attr="" comment="Saved by install script" date="1235132936" size="2831" stream="GLOB(0x923aa80)" tmpFilename="/tmp/qdJg6guZu5" user="ProjectContributor" version="1"}%
-%META:FILEATTACHMENT{name="smenu.css" attachment="smenu.css" attr="" comment="Saved by install script" date="1235132936" size="3289" stream="GLOB(0x92284c0)" tmpFilename="/tmp/YML6TcRGUA" user="ProjectContributor" version="1"}%
-%META:FILEATTACHMENT{name="empty.gif" attachment="empty.gif" attr="" comment="Saved by install script" date="1235132936" size="62" stream="GLOB(0x92ab28c)" tmpFilename="/tmp/49vQPRyULE" user="ProjectContributor" version="1"}%
-%META:FILEATTACHMENT{name="email.gif" attachment="email.gif" attr="" comment="Saved by install script" date="1235132936" size="183" stream="GLOB(0x92ab328)" tmpFilename="/tmp/pbMIapf7Yr" user="ProjectContributor" version="1"}%
-%META:FILEATTACHMENT{name="xls.gif" attachment="xls.gif" attr="" comment="Saved by install script" date="1235132936" size="918" stream="GLOB(0x92081d4)" tmpFilename="/tmp/rgVzMSVnVa" user="ProjectContributor" version="1"}%
-%META:FILEATTACHMENT{name="joinbottom.gif" attachment="joinbottom.gif" attr="" comment="Saved by install script" date="1235132936" size="66" stream="GLOB(0x92ab3a0)" tmpFilename="/tmp/JTbkDmirl9" user="ProjectContributor" version="1"}%
-%META:FILEATTACHMENT{name="question.gif" attachment="question.gif" attr="" comment="Saved by install script" date="1235132936" size="1044" stream="GLOB(0x92ab190)" tmpFilename="/tmp/6cONKyztDZ" user="ProjectContributor" version="1"}%
-%META:FILEATTACHMENT{name="file.gif" attachment="file.gif" attr="" comment="Saved by install script" date="1235132936" size="151" stream="GLOB(0x92ab10c)" tmpFilename="/tmp/amCmcQullo" user="ProjectContributor" version="1"}%
-%META:FILEATTACHMENT{name="musicfolder.gif" attachment="musicfolder.gif" attr="" comment="Saved by install script" date="1235132936" size="633" stream="GLOB(0x92ab1cc)" tmpFilename="/tmp/lNvOkwcXm6" user="ProjectContributor" version="1"}%
-%META:FILEATTACHMENT{name="person.gif" attachment="person.gif" attr="" comment="Saved by install script" date="1235132936" size="153" stream="GLOB(0x92ab5a4)" tmpFilename="/tmp/lqzSEjh91X" user="ProjectContributor" version="1"}%
-%META:FILEATTACHMENT{name="doc.gif" attachment="doc.gif" attr="" comment="Saved by install script" date="1235132936" size="922" stream="GLOB(0x92ab640)" tmpFilename="/tmp/4XvkJsxKPG" user="ProjectContributor" version="1"}%
-%META:FILEATTACHMENT{name="virtualpersons.gif" attachment="virtualpersons.gif" attr="" comment="Saved by install script" date="1235132936" size="160" stream="GLOB(0x9228538)" tmpFilename="/tmp/wUrKiQChAV" user="ProjectContributor" version="1"}%
-%META:FILEATTACHMENT{name="imgfolder.gif" attachment="imgfolder.gif" attr="" comment="Saved by install script" date="1235132936" size="622" stream="GLOB(0x92aaef0)" tmpFilename="/tmp/l1HAuTaUJJ" user="ProjectContributor" version="1"}%
-%META:FILEATTACHMENT{name="folderopen.gif" attachment="folderopen.gif" attr="" comment="Saved by install script" date="1235132936" size="376" stream="GLOB(0x92ab3ac)" tmpFilename="/tmp/nLyYzzIrVg" user="ProjectContributor" version="1"}%
-%META:FILEATTACHMENT{name="cd.gif" attachment="cd.gif" attr="" comment="Saved by install script" date="1235132936" size="239" stream="GLOB(0x92ab2c8)" tmpFilename="/tmp/r2M4ULMsj0" user="ProjectContributor" version="1"}%
-%META:FILEATTACHMENT{name="virtualperson.gif" attachment="virtualperson.gif" attr="" comment="Saved by install script" date="1235132936" size="149" stream="GLOB(0x92aaf8c)" tmpFilename="/tmp/cv75CyiLGE" user="ProjectContributor" version="1"}%
-%META:FILEATTACHMENT{name="group.gif" attachment="group.gif" attr="" comment="Saved by install script" date="1235132936" size="162" stream="GLOB(0x9228958)" tmpFilename="/tmp/BGsvRyoJDO" user="ProjectContributor" version="1"}%
-%META:FILEATTACHMENT{name="minus.gif" attachment="minus.gif" attr="" comment="Saved by install script" date="1235132936" size="86" stream="GLOB(0x92ab4b4)" tmpFilename="/tmp/dTm3GgW2Nw" user="ProjectContributor" version="1"}%
-%META:FILEATTACHMENT{name="ppt.gif" attachment="ppt.gif" attr="" comment="Saved by install script" date="1235132936" size="921" stream="GLOB(0x9208090)" tmpFilename="/tmp/UPLaHKvBLp" user="ProjectContributor" version="1"}%
-%META:FILEATTACHMENT{name="join.gif" attachment="join.gif" attr="" comment="Saved by install script" date="1235132936" size="69" stream="GLOB(0x92ab5bc)" tmpFilename="/tmp/VUhk3wSOjD" user="ProjectContributor" version="1"}%
-%META:FILEATTACHMENT{name="page.gif" attachment="page.gif" attr="" comment="Saved by install script" date="1235132936" size="582" stream="GLOB(0x92ab61c)" tmpFilename="/tmp/AsvScASY4T" user="ProjectContributor" version="1"}%
-%META:FILEATTACHMENT{name="nolines_minus.gif" attachment="nolines_minus.gif" attr="" comment="Saved by install script" date="1235132936" size="861" stream="GLOB(0x92ab6c4)" tmpFilename="/tmp/yRIGsyWvY2" user="ProjectContributor" version="1"}%
-%META:FILEATTACHMENT{name="plusbottom.gif" attachment="plusbottom.gif" attr="" comment="Saved by install script" date="1235132936" size="88" stream="GLOB(0x92ab388)" tmpFilename="/tmp/v22vDTuzkj" user="ProjectContributor" version="1"}%
-%META:FILEATTACHMENT{name="pdf.gif" attachment="pdf.gif" attr="" comment="Saved by install script" date="1235132936" size="938" stream="GLOB(0x92081c8)" tmpFilename="/tmp/Or8eNGZk42" user="ProjectContributor" version="1"}%
-%META:FILEATTACHMENT{name="minusbottom.gif" attachment="minusbottom.gif" attr="" comment="Saved by install script" date="1235132936" size="85" stream="GLOB(0x9227ea8)" tmpFilename="/tmp/G2sKpPG2mE" user="ProjectContributor" version="1"}%
-%META:FILEATTACHMENT{name="nolines_plus.gif" attachment="nolines_plus.gif" attr="" comment="Saved by install script" date="1235132936" size="870" stream="GLOB(0x92ab2d4)" tmpFilename="/tmp/wxGIMOc9jV" user="ProjectContributor" version="1"}%
-%META:FILEATTACHMENT{name="persons.gif" attachment="persons.gif" attr="" comment="Saved by install script" date="1235132936" size="164" stream="GLOB(0x92ab2b0)" tmpFilename="/tmp/aIqVxpTIAx" user="ProjectContributor" version="1"}%
-%META:FILEATTACHMENT{name="sound.gif" attachment="sound.gif" attr="" comment="Saved by install script" date="1235132936" size="166" stream="GLOB(0x92282e0)" tmpFilename="/tmp/UXqXTs4Oje" user="ProjectContributor" version="1"}%
-%META:FILEATTACHMENT{name="home.gif" attachment="home.gif" attr="" comment="Saved by install script" date="1235132936" size="172" stream="GLOB(0x9208174)" tmpFilename="/tmp/exeI1XMx7e" user="ProjectContributor" version="1"}%
-%META:FILEATTACHMENT{name="folder.gif" attachment="folder.gif" attr="" comment="Saved by install script" date="1235132936" size="372" stream="GLOB(0x92ab3d0)" tmpFilename="/tmp/WKar9kCILB" user="ProjectContributor" version="1"}%
-%META:FILEATTACHMENT{name="tree.jpg" attachment="tree.jpg" attr="" comment="Saved by install script" date="1235132936" size="8115" stream="GLOB(0x92ab568)" tmpFilename="/tmp/Webuj0Q60L" user="ProjectContributor" version="1"}%
-%META:FILEATTACHMENT{name="zip.gif" attachment="zip.gif" attr="" comment="Saved by install script" date="1235132936" size="940" stream="GLOB(0x92ab160)" tmpFilename="/tmp/NIMtxTngnP" user="ProjectContributor" version="1"}%
-%META:FILEATTACHMENT{name="image.gif" attachment="image.gif" attr="" comment="Saved by install script" date="1235132936" size="943" stream="GLOB(0x92ab46c)" tmpFilename="/tmp/zgpbPDsPTq" user="ProjectContributor" version="1"}%
-%META:FILEATTACHMENT{name="base.gif" attachment="base.gif" attr="" comment="Saved by install script" date="1235132936" size="1040" stream="GLOB(0x92ab544)" tmpFilename="/tmp/Z13MpRgOxS" user="ProjectContributor" version="1"}%
-%META:FILEATTACHMENT{name="see.gif" attachment="see.gif" attr="" comment="Saved by install script" date="1235132936" size="81" stream="GLOB(0x9227f2c)" tmpFilename="/tmp/HvRYlVWhLG" user="ProjectContributor" version="1"}%
-%META:FILEATTACHMENT{name="trend.gif" attachment="trend.gif" attr="" comment="Saved by install script" date="1235132936" size="149" stream="GLOB(0x9207f28)" tmpFilename="/tmp/9G9Ock3hof" user="ProjectContributor" version="1"}%
-%META:FILEATTACHMENT{name="trash.gif" attachment="trash.gif" attr="" comment="Saved by install script" date="1235132936" size="1051" stream="GLOB(0x9228718)" tmpFilename="/tmp/VFTEpbNTZ7" user="ProjectContributor" version="1"}%
-%META:FILEATTACHMENT{name="line.gif" attachment="line.gif" attr="" comment="Saved by install script" date="1235132936" size="66" stream="GLOB(0x9207fc4)" tmpFilename="/tmp/qVUO4dH6Pt" user="ProjectContributor" version="1"}%
-%META:FILEATTACHMENT{name="virtualhome.gif" attachment="virtualhome.gif" attr="" comment="Saved by install script" date="1235132936" size="162" stream="GLOB(0x92ab5ec)" tmpFilename="/tmp/Veo4JCYpjc" user="ProjectContributor" version="1"}%
-%META:FILEATTACHMENT{name="plus.gif" attachment="plus.gif" attr="" comment="Saved by install script" date="1235132936" size="89" stream="GLOB(0x92ab1a8)" tmpFilename="/tmp/uEAaZKgyR0" user="ProjectContributor" version="1"}%
-%META:FILEATTACHMENT{name="globe.gif" attachment="globe.gif" attr="" comment="Saved by install script" date="1235132936" size="1095" stream="GLOB(0x92ab514)" tmpFilename="/tmp/tIRk8VIZvv" user="ProjectContributor" version="1"}%
+%META:FILEATTACHMENT{name="dtree.js" attachment="dtree.js" attr="h" date="1441248808" size="30563" user="ProjectContributor" version="1"}%
+%META:FILEATTACHMENT{name="dtree.css" attachment="dtree.css" attr="h" date="1441248808" size="988" user="ProjectContributor" version="1"}%
+%META:FILEATTACHMENT{name="dmenu.css" attachment="dmenu.css" attr="h" date="1441248808" size="2831" user="ProjectContributor" version="1"}%
+%META:FILEATTACHMENT{name="smenu.css" attachment="smenu.css" attr="h" date="1441248808" size="3289" user="ProjectContributor" version="1"}%
+%META:FILEATTACHMENT{name="empty.gif" attachment="empty.gif" attr="h" date="1441248808" size="62" user="ProjectContributor" version="1"}%
+%META:FILEATTACHMENT{name="email.gif" attachment="email.gif" attr="h" date="1441248808" size="183" user="ProjectContributor" version="1"}%
+%META:FILEATTACHMENT{name="xls.gif" attachment="xls.gif" attr="h" date="1441248808" size="918" user="ProjectContributor" version="1"}%
+%META:FILEATTACHMENT{name="joinbottom.gif" attachment="joinbottom.gif" attr="h" date="1441248808" size="66" user="ProjectContributor" version="1"}%
+%META:FILEATTACHMENT{name="question.gif" attachment="question.gif" attr="h" date="1441248808" size="1044" user="ProjectContributor" version="1"}%
+%META:FILEATTACHMENT{name="file.gif" attachment="file.gif" attr="h" date="1441248808" size="151" user="ProjectContributor" version="1"}%
+%META:FILEATTACHMENT{name="musicfolder.gif" attachment="musicfolder.gif" attr="h" date="1441248808" size="633" user="ProjectContributor" version="1"}%
+%META:FILEATTACHMENT{name="person.gif" attachment="person.gif" attr="h" date="1441248808" size="153" user="ProjectContributor" version="1"}%
+%META:FILEATTACHMENT{name="doc.gif" attachment="doc.gif" attr="h" date="1441248808" size="922" user="ProjectContributor" version="1"}%
+%META:FILEATTACHMENT{name="virtualpersons.gif" attachment="virtualpersons.gif" attr="h" date="1441248808" size="160" user="ProjectContributor" version="1"}%
+%META:FILEATTACHMENT{name="imgfolder.gif" attachment="imgfolder.gif" attr="h" date="1441248808" size="622" user="ProjectContributor" version="1"}%
+%META:FILEATTACHMENT{name="folderopen.gif" attachment="folderopen.gif" attr="h" date="1441248808" size="376" user="ProjectContributor" version="1"}%
+%META:FILEATTACHMENT{name="cd.gif" attachment="cd.gif" attr="h" date="1441248808" size="239" user="ProjectContributor" version="1"}%
+%META:FILEATTACHMENT{name="virtualperson.gif" attachment="virtualperson.gif" attr="h" date="1441248808" size="149" user="ProjectContributor" version="1"}%
+%META:FILEATTACHMENT{name="group.gif" attachment="group.gif" attr="h" date="1441248808" size="162" user="ProjectContributor" version="1"}%
+%META:FILEATTACHMENT{name="minus.gif" attachment="minus.gif" attr="h" date="1441248808" size="86" user="ProjectContributor" version="1"}%
+%META:FILEATTACHMENT{name="ppt.gif" attachment="ppt.gif" attr="h" date="1441248808" size="921" user="ProjectContributor" version="1"}%
+%META:FILEATTACHMENT{name="join.gif" attachment="join.gif" attr="h" date="1441248808" size="69" user="ProjectContributor" version="1"}%
+%META:FILEATTACHMENT{name="page.gif" attachment="page.gif" attr="h" date="1441248808" size="582" user="ProjectContributor" version="1"}%
+%META:FILEATTACHMENT{name="nolines_minus.gif" attachment="nolines_minus.gif" attr="h" date="1441248808" size="861" user="ProjectContributor" version="1"}%
+%META:FILEATTACHMENT{name="plusbottom.gif" attachment="plusbottom.gif" attr="h" date="1441248808" size="88" user="ProjectContributor" version="1"}%
+%META:FILEATTACHMENT{name="pdf.gif" attachment="pdf.gif" attr="h" date="1441248808" size="938" user="ProjectContributor" version="1"}%
+%META:FILEATTACHMENT{name="minusbottom.gif" attachment="minusbottom.gif" attr="h" date="1441248808" size="85" user="ProjectContributor" version="1"}%
+%META:FILEATTACHMENT{name="nolines_plus.gif" attachment="nolines_plus.gif" attr="h" date="1441248808" size="870" user="ProjectContributor" version="1"}%
+%META:FILEATTACHMENT{name="persons.gif" attachment="persons.gif" attr="h" date="1441248808" size="164" user="ProjectContributor" version="1"}%
+%META:FILEATTACHMENT{name="sound.gif" attachment="sound.gif" attr="h" date="1441248808" size="166" user="ProjectContributor" version="1"}%
+%META:FILEATTACHMENT{name="home.gif" attachment="home.gif" attr="h" date="1441248808" size="172" user="ProjectContributor" version="1"}%
+%META:FILEATTACHMENT{name="folder.gif" attachment="folder.gif" attr="h" date="1441248808" size="372" user="ProjectContributor" version="1"}%
+%META:FILEATTACHMENT{name="tree.jpg" attachment="tree.jpg" attr="h" date="1441248808" size="8115" user="ProjectContributor" version="1"}%
+%META:FILEATTACHMENT{name="zip.gif" attachment="zip.gif" attr="h" date="1441248808" size="940" user="ProjectContributor" version="1"}%
+%META:FILEATTACHMENT{name="image.gif" attachment="image.gif" attr="h" date="1441248808" size="943" user="ProjectContributor" version="1"}%
+%META:FILEATTACHMENT{name="base.gif" attachment="base.gif" attr="h" date="1441248808" size="1040" user="ProjectContributor" version="1"}%
+%META:FILEATTACHMENT{name="see.gif" attachment="see.gif" attr="h" date="1441248808" size="81" user="ProjectContributor" version="1"}%
+%META:FILEATTACHMENT{name="trend.gif" attachment="trend.gif" attr="h" date="1441248808" size="149" user="ProjectContributor" version="1"}%
+%META:FILEATTACHMENT{name="trash.gif" attachment="trash.gif" attr="h" date="1441248808" size="1051" user="ProjectContributor" version="1"}%
+%META:FILEATTACHMENT{name="line.gif" attachment="line.gif" attr="h" date="1441248808" size="66" user="ProjectContributor" version="1"}%
+%META:FILEATTACHMENT{name="virtualhome.gif" attachment="virtualhome.gif" attr="h" date="1441248808" size="162" user="ProjectContributor" version="1"}%
+%META:FILEATTACHMENT{name="plus.gif" attachment="plus.gif" attr="h" date="1441248808" size="89" user="ProjectContributor" version="1"}%
+%META:FILEATTACHMENT{name="globe.gif" attachment="globe.gif" attr="h" date="1441248808" size="1095" user="ProjectContributor" version="1"}%

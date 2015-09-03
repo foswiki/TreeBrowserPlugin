@@ -34,12 +34,13 @@ package Foswiki::Plugins::TreeBrowserPlugin;
 
 # =========================
 use vars qw(
-  $web $topic $user $installWeb $VERSION $RELEASE $pluginName
-  $debug $js
+  $web $topic $user $installWeb $pluginName $debug $js
 );
 
-$VERSION    = '2.2';
-$RELEASE    = '2.2';
+our $VERSION    = '2.21';
+our $RELEASE    = '2.21';
+our $SHORTDESCRIPTION =
+"Renders a bulleted or numbered list as a collapsible/expandable tree of nodes.";
 $pluginName = 'TreeBrowserPlugin';
 
 # =========================
